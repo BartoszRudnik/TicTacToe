@@ -35,12 +35,25 @@ class _WaitingLobbyState extends State<WaitingLobby> {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Text(
-          'Waiting for a player to join...',
-          style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+        Row(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text(
+              'Waiting for a player to join',
+              style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                  ),
+            ),
+            const SizedBox(width: 10),
+            const SizedBox(
+              height: 20,
+              width: 20,
+              child: CircularProgressIndicator(
                 color: Colors.white,
-                fontWeight: FontWeight.w500,
               ),
+            )
+          ],
         ),
         const SizedBox(
           height: 20,

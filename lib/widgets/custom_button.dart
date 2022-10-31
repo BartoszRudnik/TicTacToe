@@ -37,6 +37,7 @@ class CustomButton extends StatelessWidget {
         child: Text(
           buttonText,
           style: Theme.of(context).textTheme.headline6,
+          textAlign: TextAlign.center,
         ),
       ),
     );
