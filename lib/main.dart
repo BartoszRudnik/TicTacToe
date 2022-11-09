@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'Flutter Demo',
+        title: 'tic_tac_toe_game',
         theme: ThemeData.dark().copyWith(
           scaffoldBackgroundColor: bgColor,
         ),

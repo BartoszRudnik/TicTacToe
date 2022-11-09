@@ -9,14 +9,14 @@ class MainMenuScreen extends StatelessWidget {
 
   static String routeName = "/main-menu";
 
-  void createRoom(BuildContext context) {
+  void navigateCreateRoom(BuildContext context) {
     Navigator.pushNamed(
       context,
       CreateRoomScreen.routeName,
     );
   }
 
-  void joinRoom(BuildContext context) {
+  void navigateJoinRoom(BuildContext context) {
     Navigator.pushNamed(
       context,
       JoinRoomScreen.routeName,
@@ -31,14 +31,14 @@ class MainMenuScreen extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CustomButton(
-              onTap: () => createRoom(context),
+              onTap: () => navigateCreateRoom(context),
               buttonText: 'Create room',
             ),
             const SizedBox(
               height: 20,
             ),
             CustomButton(
-              onTap: () => joinRoom(context),
+              onTap: () => navigateJoinRoom(context),
               buttonText: 'Join room',
             ),
           ],
